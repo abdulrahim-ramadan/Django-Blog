@@ -86,3 +86,7 @@ License
 The Django Blog App is open-source and licensed under the MIT License. See the LICENSE file for details.
 
 Happy blogging with Django! 📝✨
+
+
+
+# Please ⭐ the repo to support our project 
