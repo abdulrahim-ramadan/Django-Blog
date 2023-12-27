@@ -1,1 +1,1 @@
-# django framework
+# Django Blog
