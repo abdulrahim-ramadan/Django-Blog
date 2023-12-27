@@ -1,8 +1,7 @@
 # Django Blog
-
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Python](https://img.shields.io/badge/Python-3.12%2B-brightgreen)](https://www.python.org/)
-[![Django](https://img.shields.io/badge/Django-4.2%2B-brightgreen)](https://www.djangoproject.com/)
+<p align="center">
+<img src="https://techstack-generator.vercel.app/django-icon.svg" alt="icon" width="80" height="80" />
+</p>
 
 A robust Django-based blog app for managing and publishing articles with ease.
 
