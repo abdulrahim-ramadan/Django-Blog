@@ -1,6 +1,6 @@
 # Django Blog
 <p align="center">
-<img src="https://techstack-generator.vercel.app/django-icon.svg" alt="icon" width="80" height="80" />
+<img src="https://techstack-generator.vercel.app/django-icon.svg" alt="icon" width="100" height="100" />
 </p>
 
 A robust Django-based blog app for managing and publishing articles with ease.
