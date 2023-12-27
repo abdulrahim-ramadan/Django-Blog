@@ -5,7 +5,7 @@ from .models import Post
 
 class PostAdmin(admin.ModelAdmin):
     list_display = ['id','name','created_at']
-    list_filter =['created_at']
+    list_filter =['created_at','tags']
     search_fields =['name','content']
 
 
