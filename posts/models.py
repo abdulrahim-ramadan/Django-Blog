@@ -29,5 +29,7 @@ class Post(models.Model):
     content = models.TextField(max_length=10000)
     created_at = models.DateTimeField(default=timezone.now)
 
+    image = models.ImageField(upload_to='post')
+
     def __str__(self):
         return self.name
