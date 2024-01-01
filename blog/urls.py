@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path , include
-from posts.views import post_list , post_detail , add_post
+from posts.views import post_list , post_detail , add_post , edit_post , delete_post
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -26,6 +26,8 @@ urlpatterns = [
     path('blog/', post_list),
     path('blog/new', add_post),
     path('blog/<int:id>', post_detail),
+    path('blog/<int:id>/edit' , edit_post),
+    path('blog/<int:id>/delete' , delete_post),
 
     path('summernote/', include('django_summernote.urls')),
 ]
