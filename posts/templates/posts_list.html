@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> <a href="/blog">Blog </a> </h3>
+    <a href="/blog/new">add new post</a>
+  <ul>
+    {% for item in posts %}
+
+       <li><a href="/blog/{{item.id}}"> {{item}} </a></li>
+
+    {% endfor %}
+  </ul>  
+</body>
+</html>    
