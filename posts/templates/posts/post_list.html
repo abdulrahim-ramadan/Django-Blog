@@ -9,7 +9,8 @@
     <h3> <a href="/blog">Blog </a> </h3>
     <a href="/blog/new">add new post</a>
   <ul>
-    {% for item in posts %}
+    <!-- 4:  post_list -->
+    {% for item in post_list %}
 
        <li><a href="/blog/{{item.id}}"> {{item}} </a></li>
 
