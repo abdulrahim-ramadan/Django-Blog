@@ -10,7 +10,7 @@
 
 The Django Blog App is a powerful and customizable solution for adding a blog functionality to your Django project. It simplifies the process of managing and publishing articles while providing flexibility for customization.
 
-## Features
+### Features
 
 - **User-Friendly Admin Interface**: Easily manage your blog posts with the Django admin interface.
 
