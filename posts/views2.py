@@ -1,14 +1,15 @@
 from django.shortcuts import render 
 from .models import Post
+from .forms import PostForm
 
-# fonchschen
+# # Functions
 
-def post_list(request):
-    data = Post.objects.all()    # model : query
-    return render(request,'posts_list.html',{'posts':data}) #2-template:frontend 3-context {}
+# def post_list(request):
+#     data = Post.objects.all()    # model : query
+#     return render(request,'posts_list.html',{'posts':data}) #2-template:frontend 3-context {}
 
 # 1: Class
-# 4:muss ich eine folter machen und htmal daten rein muss ich immer Aufnahme aufpassen
+# 4:
 
 from django.views.generic import ListView , DetailView , CreateView , UpdateView ,DeleteView
 
@@ -29,25 +30,26 @@ class PostDetail(DetailView):
 
 class PostCreate(CreateView):
     model = Post
-    fields = '__all__'
+    #fields = '__all__'
     success_url='/blog'        
-
+    form_class = PostForm
 
 
 #10:PostCreate 
     
 class PostEdit(UpdateView):
     model = Post
-    fields = '__all__'
+    #fields = '__all__'
     success_url='/blog'
     template_name ='posts/edit_post.html'  
+    form_class = PostForm
 
 
 # 11. DeleteView 
 
 class PostDelete(DeleteView):
     model = Post
-    success_url =('/blog/')       
+    success_url ='/blog'       
 
 
 

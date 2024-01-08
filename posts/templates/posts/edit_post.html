@@ -1,8 +1,26 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block body %}
+
+        <div class="container my-5">
+            <div class="row">
+                <div class="clo-lg-8 mx-auto">
+                    <h3 class="my-3">Edit Post</h3>
+
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {% bootstrap_form form %}
+                        {% bootstrap_button button_type="submit" content="Edit" %}
+                    </form>
+                    
+
+                </div>
+            </div>
+        </div>
+
+        {% endblock body %}
 
 
 
-<form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{form}}
-    <input type="submit" value="edit">
-</form>
+

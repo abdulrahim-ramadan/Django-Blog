@@ -1,20 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h3> <a href="/blog">Blog </a> </h3>
-    <a href="/blog/new">add new post</a>
-  <ul>
-    <!-- 4:  post_list -->
-    {% for item in post_list %}
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
 
-       <li><a href="/blog/{{item.id}}"> {{item}} </a></li>
+{% block body %}
+         
+      <div class="container my-5">
+          <div class="row">
+              {% for item in post_list %}
+                  <div class="col-lg-3">
+                      <div class="card" >
+                          <img src="{{item.image.url}}" class="card-img-top" alt="...">
+                          <div class="card-body">
+                          <h5 class="card-title">{{item}}</h5>
+                          <a href="/blog/{{item.id}}" class="btn btn-primary">details</a>
+                          </div>
+                      </div>
+                  </div>
+              {% endfor %}
+          </div>
+      </div>
 
-    {% endfor %}
-  </ul>  
-</body>
-</html>    
+      {% endblock body %}
+

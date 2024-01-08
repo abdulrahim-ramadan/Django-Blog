@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     
     'taggit',
     'django_summernote',
+    "django_bootstrap5",
     'posts',
 ]
 
@@ -131,3 +132,12 @@ MEDIA_ROOT = BASE_DIR / 'media/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+SUMMERNOTE_CONFIG = {
+    'summernote': {
+        # Change editor size
+        'width': '100%',
+        #'height': '480',
+    }
+    }

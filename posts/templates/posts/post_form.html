@@ -1,10 +1,23 @@
+{% extends 'base.html' %}
 
+{% block body %}
 
+        <div class="container my-5">
+            <div class="row">
+                <div class="clo-lg-8 mx-auto">
+                    <h3 class="my-3">add Post</h3>
 
-<form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{form}}
-    <input type="submit" value="Add">
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {% bootstrap_form form %}
+                        {% bootstrap_button button_type="submit" content="Edit" %}
+                    </form>
+                    
 
-</form>
+                </div>
+            </div>
+        </div>
+
+        {% endblock body %}
+
 
