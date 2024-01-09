@@ -12,7 +12,7 @@ The Django Blog App is a powerful and customizable solution for adding a blog fu
 
 ## Features
 
-- **User-Friendly Admin Interface**: Easily manage your blog posts with the Django admin interface.
+- ***User-Friendly Admin Interface**: Easily manage your blog posts with the Django admin interface.
 
 - **Markdown Support**: Write your articles using Markdown for a clean and efficient writing experience.
 
